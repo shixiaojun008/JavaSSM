@@ -66,7 +66,7 @@ public class SqlSessionFactoryUtils {
 
     public static SqlSession openSqlSession(){
         if(sqlSessionFactory == null){
-            getSqlSessionFactory2();
+            getSqlSessionFactory();
         }
         return  sqlSessionFactory.openSession();
     }

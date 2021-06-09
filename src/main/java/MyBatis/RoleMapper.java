@@ -1,5 +1,7 @@
 package MyBatis;
 
+import org.apache.ibatis.annotations.Param;
+
 import java.util.List;
 
 public interface RoleMapper {
@@ -10,7 +12,7 @@ public interface RoleMapper {
 
     //public int updateRole(Role role);
 
-    public Role getRole(Long id);
+    Role getRole(@Param("id") Long id);
 
 
 

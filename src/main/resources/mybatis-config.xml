@@ -4,7 +4,7 @@
 
 <configuration>
 <typeAliases><!-- 别名 -->
-    <typeAlias alias="role" type="java.MyBatis.Role"/>
+    <typeAlias alias="role" type="MyBatis.Role"/>
 </typeAliases>
 <!-- 数据库环境 -->
 <environments default="development">
@@ -20,6 +20,6 @@
 </environments>
 <!-- 映射文件 -->
 <mappers>
-    <mapper resource="java.MyBatis.RoleMapper.xml"/>
+    <mapper resource="generator/mapper/xml/RoleMapper.xml"/>
 </mappers>
 </configuration>
